@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import vn.tass.microservice.model.ApplicationException;
 import vn.tass.microservice.model.BaseResponseV2;
 import vn.tass.microservice.model.ERROR;
+import vn.tass.microservice.model.userauthen.UserDTO;
 import vn.tass.microservice.redis.dto.UserLoginDTO;
 import vn.tass.microservice.redis.repository.UserLoginRepository;
 
@@ -21,7 +22,7 @@ import java.util.Set;
 import java.util.UUID;
 
 @Service
-public class UserService {
+public class UserService extends BaseService{
 
     @Autowired
     UserRepository userRepository;
@@ -92,8 +93,10 @@ public class UserService {
         return loginResponse;
     }
 
-    public BaseResponseV2 updateInfo(UpdateInfoRequest request, long id) throws ApplicationException {
-        Optional<UserEntity> userOpt = userRepository.findById(id);
+    public BaseResponseV2 updateInfo(UpdateInfoRequest request) throws ApplicationException {
+        UserDTO userDTO = getUserDTO();
+
+        Optional<UserEntity> userOpt = userRepository.findById(userDTO.getUserId());
 
         if (userOpt.isEmpty()) {
             throw new ApplicationException(ERROR.ID_NOT_FOUND, "Id not found");

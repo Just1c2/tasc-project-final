@@ -21,7 +21,7 @@ public class UserController {
     }
 
     @PutMapping("/updateInfo")
-    public BaseResponseV2 updateInfo(@RequestBody UpdateInfoRequest request,@RequestParam(name = "id") long id) throws ApplicationException {
-        return userService.updateInfo(request, id);
+    public BaseResponseV2 updateInfo(@RequestBody UpdateInfoRequest request) throws ApplicationException {
+        return userService.updateInfo(request);
     }
 }

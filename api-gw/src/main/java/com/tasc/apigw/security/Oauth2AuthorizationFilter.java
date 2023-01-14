@@ -65,8 +65,7 @@ public class Oauth2AuthorizationFilter extends BasicAuthenticationFilter {
 
         AntPathMatcher adt = new AntPathMatcher();
 
-
-            if (adt.match(uri, "/product/findAll")){
+            if (adt.match(uri, "/product/findAll") || adt.match(uri, "/product/findById") || adt.match(uri, "/product/create") || adt.match(uri, "/product/update") || adt.match(uri, "/product/delete")){
                 if (!role.equals("ADMIN")) {
                     response.setContentType("application/json");
                     response.setCharacterEncoding("UTF-8");
