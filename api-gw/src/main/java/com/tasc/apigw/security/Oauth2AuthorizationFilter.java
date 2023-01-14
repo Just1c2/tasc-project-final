@@ -65,7 +65,7 @@ public class Oauth2AuthorizationFilter extends BasicAuthenticationFilter {
 
         AntPathMatcher adt = new AntPathMatcher();
 
-            if (adt.match(uri, "/product/findAll") || adt.match(uri, "/product/findById") || adt.match(uri, "/product/create") || adt.match(uri, "/product/update") || adt.match(uri, "/product/delete")){
+            if (adt.match("/product/**", uri)){
                 if (!role.equals("ADMIN")) {
                     response.setContentType("application/json");
                     response.setCharacterEncoding("UTF-8");
@@ -73,7 +73,7 @@ public class Oauth2AuthorizationFilter extends BasicAuthenticationFilter {
                     return;
                 }
             }
-        if (adt.match(uri, "/category/findAll") || adt.match(uri, "/category/findById") || adt.match(uri, "/category/create") || adt.match(uri, "/category/update") || adt.match(uri, "/category/delete")){
+        if (adt.match("/category/**", uri)){
             if (!role.equals("ADMIN")) {
                 response.setContentType("application/json");
                 response.setCharacterEncoding("UTF-8");
