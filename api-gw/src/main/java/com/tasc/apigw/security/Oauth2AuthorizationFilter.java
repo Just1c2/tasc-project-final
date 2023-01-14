@@ -73,6 +73,14 @@ public class Oauth2AuthorizationFilter extends BasicAuthenticationFilter {
                     return;
                 }
             }
+        if (adt.match(uri, "/category/findAll") || adt.match(uri, "/category/findById") || adt.match(uri, "/category/create") || adt.match(uri, "/category/update") || adt.match(uri, "/category/delete")){
+            if (!role.equals("ADMIN")) {
+                response.setContentType("application/json");
+                response.setCharacterEncoding("UTF-8");
+                response.setStatus(HttpStatus.FORBIDDEN.value());
+                return;
+            }
+        }
             if (adt.match(uri, "/createOrder")) {
                 if (role.isBlank() || role.isEmpty()) {
                     response.setContentType("application/json");
