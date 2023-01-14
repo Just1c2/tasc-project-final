@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.microservice-tasc.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.microservice-tasc.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gw/microservice-tasc.api-gw.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gw/microservice-tasc.api-gw.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/microservice-tasc.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/microservice-tasc.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service/microservice-tasc.order-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service/microservice-tasc.order-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/payment-service/microservice-tasc.payment-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/payment-service/microservice-tasc.payment-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product/microservice-tasc.product.main.iml" filepath="$PROJECT_DIR$/.idea/modules/product/microservice-tasc.product.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-service/microservice-tasc.user-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-service/microservice-tasc.user-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/warehouse-service/microservice-tasc.warehouse-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/warehouse-service/microservice-tasc.warehouse-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product/product.microservice-tasc.product.main.iml" filepath="$PROJECT_DIR$/.idea/modules/product/product.microservice-tasc.product.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gw/vn.tass.microservice.microservice-tasc.api-gw.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gw/vn.tass.microservice.microservice-tasc.api-gw.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/vn.tass.microservice.microservice-tasc.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/vn.tass.microservice.microservice-tasc.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service/vn.tass.microservice.microservice-tasc.order-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service/vn.tass.microservice.microservice-tasc.order-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/payment-service/vn.tass.microservice.microservice-tasc.payment-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/payment-service/vn.tass.microservice.microservice-tasc.payment-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product/vn.tass.microservice.microservice-tasc.product.main.iml" filepath="$PROJECT_DIR$/.idea/modules/product/vn.tass.microservice.microservice-tasc.product.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-service/vn.tass.microservice.microservice-tasc.user-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-service/vn.tass.microservice.microservice-tasc.user-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/warehouse-service/vn.tass.microservice.microservice-tasc.warehouse-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/warehouse-service/vn.tass.microservice.microservice-tasc.warehouse-service.main.iml" />
+    </modules>
+  </component>
+</project>

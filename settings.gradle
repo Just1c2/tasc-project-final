@@ -1,0 +1,8 @@
+rootProject.name = 'microservice-tasc'
+include 'common'
+include 'order-service'
+include 'product'
+include 'user-service'
+include 'payment-service'
+include 'api-gw'
+include 'warehouse-service'
